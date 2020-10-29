@@ -1,18 +1,4 @@
-.container_flex{
-  display: flex;
+
+.container{
   margin-top: 50px;
-  justify-content: space-around;
-}
-.left_menu{
   text-align: center;
-}
-.square{
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  background-color: lightgrey;
-  border: 1px solid black;
-}
-#numberEntered{
-  /* display: none; */
-}
