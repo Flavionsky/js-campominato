@@ -7,6 +7,7 @@ function getRandom(min, max) {
 
 //definisco la mia var che darà il valore sull'html
 var maxNumEl = document.getElementById("maxNum");
+var startSectionEl = document.getElementById("startSection");
 //definisco il mio start butn
 var startBtnEl = document.getElementById('startBtn');
 //definisco la mia variabile globale
@@ -53,6 +54,7 @@ for (var i = 1; i <= RANDOM_NUMB; i++){
     }}
   console.log(oneHundredArr);
   gameInputEl.style.display = "block";
+	startSectionEl.style.display = "none";
 });
 // prendo il bottone dall'HTML
 var tryBtnEl = document.getElementById('tryBtn');
