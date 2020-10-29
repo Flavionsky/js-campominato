@@ -40,9 +40,9 @@ switch(myNumEl > 100 || myNumEl < 1){
   break;
   case false:
 
-    // numberEnteredEl.style.display = "block";
+	var WIN_NUMBER = 100;
   //definisco un ciclo che inserisce il numero in input dentro all'array solo se è diverso da uno degli altri presenti
-    switch(oneHundredArr.length == 99){
+    switch(oneHundredArr.length == WIN_NUMBER-1){
       case true:
       oneHundredArr.push(parseInt(myNumEl));
       messageLoseWinEl.innerHTML = "Complimenti, Hai vinto!";
