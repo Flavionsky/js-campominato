@@ -66,6 +66,7 @@ tryBtnEl.addEventListener('click', function(){
 var myNumEl = document.getElementById("myNum").value;
 var messageLoseWinEl = document.getElementById("messageLoseWin");
 var numberEnteredEl = document.getElementById("numberEntered");
+var numberRemainingEl = document.getElementById("numberRemaining");
 switch(myNumEl > WIN_NUMBER || myNumEl < 1){
   case true:
 	alert("INSERISCI UN NUMERO DA 1 A " + WIN_NUMBER + "!");
@@ -86,6 +87,7 @@ switch(myNumEl > WIN_NUMBER || myNumEl < 1){
         case false:
         oneHundredArr.push(parseInt(myNumEl));
         numberEnteredEl.innerHTML += myNumEl + " ";
+				numberRemainingEl.innerHTML = (WIN_NUMBER - oneHundredArr.length);
         break;
       }
       break;
