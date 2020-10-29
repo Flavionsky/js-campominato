@@ -9,11 +9,20 @@
   </head>
   <body>
     <div class="container">
-      <h3>Inserisci un numero da 1 a 100 e spera di non prendere uno dei numeri già presenti!</h3>
-      <input id="myNum" type="number" min="1" max="100" step="1" placeholder="1-100">
-      <button id="tryBtn" type="button" name="button">Tenta la sorte!</button>
-      <h2 id="messageLoseWin"></h2>
-      <div id="numberEntered">Numeri inseriti fino ad ora :<br></div>
+      <h2>Scegli la difficoltà</h2>
+      <select id="difficulty" name="">
+        <option value="0">Facile</option>
+        <option value="1">Medio</option>
+        <option value="2">Difficile</option>
+      </select>
+      <button id="startBtn" type="button" name="button">Inizia</button>
+      <div id="gameInput">
+        <h3>Inserisci un numero da 1 a <span id="maxNum"></span> e spera di non prendere uno dei numeri già presenti!</h3>
+        <input id="myNum" type="number" min="1" step="1">
+        <button id="tryBtn" type="button" name="button">Tenta la sorte!</button>
+        <h2 id="messageLoseWin"></h2>
+        <div id="numberEntered">Numeri inseriti fino ad ora :<br></div>
+      </div>
     </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
