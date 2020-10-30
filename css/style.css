@@ -1,8 +1,40 @@
-
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
 .container{
   margin-top: 50px;
   text-align: center;
 }
 #gameInput{
   display: none;
+}
+#square-easy-flex, #square-medium-flex, #square-hard-flex{
+ margin-left: auto;
+ margin-right: auto;
+ flex-wrap: wrap;
+ border: 1px solid black;
+}
+#square-easy-flex{
+   width: 752px;
+   display: none;
+}
+#square-medium-flex{
+  width: 677px;
+  display: none;
+}
+#square-hard-flex{
+  width: 527px;
+  display: none;
+}
+.square{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.square:hover{
+  background-color: lightgrey;
 }
