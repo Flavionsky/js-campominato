@@ -1,9 +1,3 @@
-//definisco la mia funzione random che prenderà un numero casuale
-function getRandom(min, max) {
-		min = Math.ceil(min);
-		max = Math.floor(max);
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 //definisco la mia var che darà il valore sull'html
 var maxNumEl = document.getElementById("maxNum");
@@ -32,26 +26,14 @@ switch(parseInt(difficultyEl)){
 	case 0:
 	parseInt(WIN_NUMBER = 100);
 	maxNumEl.innerHTML = 100;
-	easyEl.style.display = "flex";
-	for(var i = 0; i < WIN_NUMBER; i ++){
-		easyEl.innerHTML += '<div class="square"></div>';
-	}
 	break;
 	case 1:
 	parseInt(WIN_NUMBER = 81);
 	maxNumEl.innerHTML = 81;
-	mediumEl.style.display = "flex";
-	for(var i = 0; i < WIN_NUMBER; i ++){
-		mediumEl.innerHTML += '<div class="square"></div>';
-	}
 	break;
 	case 2:
 	parseInt(WIN_NUMBER = 49);
 	maxNumEl.innerHTML = 49;
-	hardEl.style.display = "flex";
-	for(var i = 0; i < WIN_NUMBER; i ++){
-		hardEl.innerHTML += '<div class="square"></div>';
-	}
 	break;
 }
 console.log(WIN_NUMBER);
@@ -72,31 +54,6 @@ for (var i = 1; i <= RANDOM_NUMB; i++){
   gameInputEl.style.display = "block";
 	startSectionEl.style.display = "none";
 
-	// prendo gli elementi che mi servono dall'html e gli do una variabile
-	var myNumEl = document.getElementById("myNum").value;
-	var slotElements = document.getElementsByClassName('square');
-
-
-		for(var i = 0; i < slotElements.length; i++){
-			slotElements[i].value = i;
-			slotElements[i].addEventListener('click', function(event){
-				myNumEl = parseInt(event.target.value)
-
-				if(oneHundredArr.includes(parseInt(myNumEl))){
-					event.target.style.backgroundImage = "url('img/mine.jpg')";
-				}else {
-					event.target.style.backgroundImage = "url('img/water.png')";
-				}
-			})
-			slotElements[i].addEventListener('contextmenu', function(event){
-				myNumEl = parseInt(event.target.value)
-
-				event.preventDefault();
-
-		    event.target.style.backgroundImage = "url('img/flag.png')";
-			})
-
-		}
 });
 
 
