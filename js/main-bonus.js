@@ -17,6 +17,7 @@ startBtnEl.addEventListener('click', function(){
 	var easyEl = document.getElementById('square-easy-flex');
 	var mediumEl = document.getElementById('square-medium-flex');
 	var hardEl = document.getElementById('square-hard-flex');
+	var myContainerEl = document.getElementById('myContainer');
 //definisco le variabili
 var RANDOM_NUMB = 16;
 // condizione di scelta difficoltà
@@ -24,6 +25,7 @@ switch(parseInt(difficultyEl)){
 	case 0:
 	parseInt(WIN_NUMBER = 100);
 	easyEl.style.display = "flex";
+	myContainerEl.style.width = "752px"
 	for(var i = 0; i < WIN_NUMBER; i ++){
 		easyEl.innerHTML += '<div class="square"></div>';
 	}
@@ -31,6 +33,7 @@ switch(parseInt(difficultyEl)){
 	case 1:
 	parseInt(WIN_NUMBER = 81);
 	mediumEl.style.display = "flex";
+	myContainerEl.style.width = "677px"
 	for(var i = 0; i < WIN_NUMBER; i ++){
 		mediumEl.innerHTML += '<div class="square"></div>';
 	}
@@ -38,6 +41,7 @@ switch(parseInt(difficultyEl)){
 	case 2:
 	parseInt(WIN_NUMBER = 49);
 	hardEl.style.display = "flex";
+	myContainerEl.style.width = "527px"
 	for(var i = 0; i < WIN_NUMBER; i ++){
 		hardEl.innerHTML += '<div class="square"></div>';
 	}

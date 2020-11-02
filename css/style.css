@@ -3,7 +3,14 @@
   box-sizing: border-box;
   padding: 0;
 }
+body{
+  background-image: url('../img/mines-background.png');
+}
 .container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 752px;
+  background-color: white;
   margin-top: 50px;
   text-align: center;
 }
@@ -17,15 +24,15 @@
  border: 1px solid black;
 }
 #square-easy-flex{
-   width: 752px;
+   width: 100%;
    display: none;
 }
 #square-medium-flex{
-  width: 677px;
+  width: 100%;
   display: none;
 }
 #square-hard-flex{
-  width: 527px;
+  width: 100%;
   display: none;
 }
 .square{
